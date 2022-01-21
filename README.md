@@ -18,8 +18,7 @@ Programador a Bordo: https://www.youtube.com/watch?v=YEC46W3LPuY
 
 
 # Conceitos aprendidos
-* Fetch API
-* ReadableStream
-* Clousures
-* Imutabilidade
-* Calculo de Porcentagem (Os bytes X são quantos porcento de um total Y de bytes?)
+* Memo
+* Funções Puras
+* High Order Functions
+* Estrutura Map
