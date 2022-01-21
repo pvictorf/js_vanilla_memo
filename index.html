@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB Calculator MEMO</title>
+  </head>
+  <body>
+    <div id="app">
+      <p class="info">
+        <strong>Memo</strong> é uma que evita calculos computacionais repetidos, cacheando o resultado e o retornando. <br/>
+        Quando <strong>"Memo Change Color" recebe os mesmos valores de agumento</strong> não executará uma nova conversão de RGB para Hex, irá retornar diretamente o resultado em cache. <br/><br/>
+        Importante destacar deve ser composto de funções puras, os mesmos valores de entrada devem sempre gerar a mesma saída.
+      </p>
+      <div class="container">
+        <h1>RGB Calculator MEMO</h1>
+        <label for="R">
+          <span>R:</span> <input id="R" type="range" min="0" max="254">
+        </label>
+        <label for="G">
+          <span>G:</span> <input id="G" type="range" min="0" max="254">
+        </label>
+        <label for="B">
+          <span>B:</span> <input id="B" type="range" min="0" max="254">
+        </label>
+        <div class="container-buttons">
+          <button id="colorButtonEl" class="changeColorButton">Change Color</button>
+          <button id="colorButtonMemoEl" class="changeColorButton"><i>Memo</i> Change Color</button>
+        </div>
+      </div>
+      <br/>
+      <code class="result">
+        Color <div id="color"></div>
+        Calls: <p id="calls"></p>
+        Time: <p id="time"></p>
+      </code>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
