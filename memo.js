@@ -2,6 +2,7 @@ export const memo = (fn) => {
   const cache = new Map;
 
   return function(...args) {
+    // Gerando a string de uma chave de acordo com os argumentos passados.
     const key = JSON.stringify(args)
     
     // Verificando se a função foi executada anteriormente com os mesmo argumentos
